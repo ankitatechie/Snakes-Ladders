@@ -1,0 +1,169 @@
+/* Common heading */
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.heading--red {
+    color: red;
+}
+
+.heading--green {
+    color: green;
+}
+
+.heading--orange {
+    color: orange;
+}
+
+.heading--mrgn {
+    margin: 0 10px;
+}
+
+/* Choose player mode */
+.playerMode {
+    max-width: 450px;
+    margin: 40px auto;
+    border: 1px solid #eee;
+    padding: 25px 40px;
+
+    h3 {
+        margin: 0 0 20px;
+        font-weight: 400;
+    }
+}
+
+/* Board distribution */
+.board {
+    display: inline-block;
+    vertical-align: top;
+
+    &--left {
+        width: 55%;
+    }
+
+    &--right {
+        width: 45%;
+        text-align: left;
+    }
+}
+
+/* Game Board */
+table {
+    background: url('https://3.bp.blogspot.com/-UymfU2ZakKg/UeE_6f7zUiI/AAAAAAAAIEM/AyY9lN6gmxc/s1600/snakes+and+ladders.jpg') center/cover;
+    width: 721px;
+    height: 600px;
+}
+
+/* Players */
+.players {
+    padding: 20px;
+}
+
+.player {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0 10px 20px 0;
+
+    &.active {
+        background-clip:content-box;
+        width: 12px;
+        height: 12px;
+        padding: 4px;
+    }
+
+    &__0 {
+        border-color: red;
+    }
+
+    &__0.active {
+        background-color: red;
+    }
+
+    &__1 {
+        border-color: green;
+    }
+
+    &__1.active {
+        background-color: green;
+    }
+
+    &__2 {
+        border-color: blue;
+    }
+
+    &__2.active {
+        background-color: blue;
+    }
+
+    &__3 {
+        border-color: yellow;
+    }
+
+    &__3.active {
+        background-color: yellow;
+    }
+}
+
+/* Dice section */
+.dice {
+    max-width: 150px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+
+    &__number {
+        font-size: 40px;
+        margin: 10px 0 30px;
+        font-weight: lighter;
+    }
+}
+
+.button {
+    cursor: pointer;
+    max-width: 80px;
+    background-color: #e50000;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Cards */
+.card-container {
+    text-align: center;
+    width: 700px;
+    margin: 50px auto 0;
+}
+
+.card {
+    display: inline-block;
+    width: 40%;
+    min-height: 120px;
+    vertical-align: middle;
+    margin: 0 10px 20px;
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: left;
+    background-color: #f8f8f8;
+    text-transform: capitalize;
+}
+
+.winner {
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
