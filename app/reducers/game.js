@@ -6,16 +6,16 @@ function game(state = [], action) {
             return {
                 ...state,
                 players: [
-                    ...state.players.slice(0, i), //before the one we are updating
+                    ...state.players.slice(0, i), // before the one we are updating
                     {
-                        ...state.players[i], 
+                        ...state.players[i],
                         position: player.position,
-                        noOfThrows: player.noOfThrows, 
+                        noOfThrows: player.noOfThrows,
                         noOfSixEncountered: player.noOfSixEncountered,
                         noOfSnakeBites: player.noOfSnakeBites,
                         noOfLaddersTaken: player.noOfLaddersTaken
                     },
-                    ...state.players.slice(i + 1) //after the one we are updating
+                    ...state.players.slice(i + 1) // after the one we are updating
                 ]
             };
         case 'SET_PLAYER_MODE':
@@ -25,7 +25,7 @@ function game(state = [], action) {
             }
             return {
                 ...state,
-                isActive: true, 
+                isActive: true,
                 playerMode: action.mode,
                 players: [
                     ...state.players,
@@ -36,7 +36,7 @@ function game(state = [], action) {
             return {
                 ...state,
                 gameOver: action.gameOver
-            }    
+            };
         default:
             return state;
     }

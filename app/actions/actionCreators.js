@@ -1,7 +1,7 @@
 export function playerTurn(playerInfo, activePlayer) {
     return {
         type: 'PLAYER_TURN',
-        playerInfo, 
+        playerInfo,
         activePlayer
     };
 }
@@ -18,5 +18,5 @@ export function setGameOver(gameOver) {
     return {
         type: 'SET_GAME_OVER',
         gameOver
-    }
+    };
 }
